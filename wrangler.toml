@@ -4,7 +4,7 @@ main = "source/index.ts"
 compatibility_date = "2024-12-12"
 
 [triggers]
-crons = ["* * * * *"]
+crons = ["*/5 * * * *"]
 
 [observability]
 enabled = true
