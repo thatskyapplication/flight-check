@@ -66,7 +66,7 @@ export default {
 			return new Response("Unauthorised.", { status: 401 });
 		}
 
-		await env.FLIGHT_CHECK.put(String(service), String(Date.now()), { expirationTtl: 60 });
+		await env.FLIGHT_CHECK.put(String(service), String(Date.now()), { expirationTtl: 300 });
 		return new Response("Checked in.", { status: 200 });
 	},
 } satisfies ExportedHandler<Env>;
