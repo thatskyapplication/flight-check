@@ -2,6 +2,8 @@
 name = "flight-check"
 main = "source/index.ts"
 compatibility_date = "2024-12-12"
+workers_dev = false
+routes = [{ pattern = "flight-check.thatskyapplication.com", custom_domain = true }]
 
 [triggers]
 crons = ["*/5 * * * *"]
